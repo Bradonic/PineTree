@@ -8,35 +8,29 @@ import java.util.Scanner;
  * Print pine tree using hashes
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("How tall is the tree: ");
         int height = sc.nextInt();
-        int spaces = height - 1;
-        int hashes = 1;
+        int spaces = 0;
+        int hashes = height;
         int stumpSpaces = height - 1;
-        while (height != 0)
-        {
-            for (int i = 0; i < spaces; i++)
-            {
-                System.out.print(" ");
-            }
-            for (int j = 0; j < hashes; j++)
-            {
-                System.out.print("#");
-            }
-            System.out.println("");
-            spaces--;
-            hashes += 2;
-            height--;
-        }
-        for (int k = 0; k < stumpSpaces; k++)
-        {
+        for (int k = 0; k < stumpSpaces; k++) {
             System.out.print(" ");
         }
         System.out.println("#");
+        while (height != 0) {
+            for (int i = 0; i < spaces; i++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < hashes * 2; j++) {
+                System.out.print("#");
+            }
+            System.out.println("");
+            spaces++;
+            hashes--;
+            height--;
+        }
     }
 }
