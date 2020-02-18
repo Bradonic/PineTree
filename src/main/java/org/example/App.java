@@ -14,7 +14,10 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("How tall is the tree: ");
-        int height = sc.nextInt();
+        drawTree(sc.nextInt());
+    }
+
+    public static void drawTree(int height) {
         int spaces = height - 1;
         int hashes = 1;
         int stumpSpaces = height - 1;
@@ -39,4 +42,5 @@ public class App
         }
         System.out.println("#");
     }
+
 }
