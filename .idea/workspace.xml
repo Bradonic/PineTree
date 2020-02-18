@@ -14,6 +14,14 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
+=======
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+>>>>>>> d8b885754159b0be1d850a2b7b7eb40a4db10779
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
